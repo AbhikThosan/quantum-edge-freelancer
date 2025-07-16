@@ -1,7 +1,12 @@
+import JobList from "@/components/jobs/JobList";
 import React from "react";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <JobList />
+    </>
+  );
 };
 
 export default Home;

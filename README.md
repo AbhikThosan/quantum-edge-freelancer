@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Quantum Edge Freelancer
+A Next.js-based freelancing platform for job listings and user authentication.
+Overview
+This project is a web application built with Next.js, TypeScript, and Tailwind CSS. It includes features for user registration, login, and job listings, with a focus on a responsive and modern UI.
+Project Structure
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+my-nextjs-app/
+├── .env.local
+├── .env.example
+├── .gitignore
+├── next.config.js
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── README.md
+├── public/
+│   ├── icons/
+│   ├── images/
+│   └── favicon.ico
+├── src/
+│   ├── app/
+│   │   ├── (auth)/
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx
+│   │   │   └── register/
+│   │   │       └── page.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── SocialLinksGroup.tsx
+│   │   ├── jobs/
+│   │   │   ├── JobCard.tsx
+│   │   │   ├── JobList.tsx
+│   │   ├── layout/
+│   │   │   ├── Footer.tsx
+│   │   │   └── navigation.tsx
+│   │   ├── Login/
+│   │   │   ├── LoginForm.tsx
+│   │   ├── register/
+│   │   │   ├── RegisterForm.tsx
+│   │   │   ├── TermsPrivacy.tsx
+│   ├── hooks/
+│   │   ├── useJobList.ts
+│   │   ├── useLogin.ts
+│   │   ├── usePopularPosts.ts
+│   │   ├── useRegistration.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Clone the repository:
+git clone https://github.com/AbhikThosan/quantum-edge-freelancer.git
+cd my-nextjs-app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies:
+npm install
 
-## Learn More
+Set up environment variables:
 
-To learn more about Next.js, take a look at the following resources:
+Copy .env.example to .env.local and update the values (e.g., API endpoints).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run the development server:
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Usage
 
-## Deploy on Vercel
+Visit http://localhost:3000 to see the app.
+Use the login and register pages under the /login and /register routes.
+View job listings on the homepage or a dedicated jobs page.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+User authentication (login/register)
+Job listing with cards
+Responsive design with Tailwind CSS
+Custom hooks for API calls
+
+Technologies
+
+Next.js
+TypeScript
+Tailwind CSS
+React
+
+Contributing
+Feel free to open issues or submit pull requests. Please follow the existing code style.
+License
+MIT License (specify if different).

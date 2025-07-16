@@ -58,10 +58,6 @@ cd my-nextjs-app
 Install dependencies:
 npm install
 
-Set up environment variables:
-
-Copy .env.example to .env.local and update the values (e.g., API endpoints).
-
 Run the development server:
 npm run dev
 
